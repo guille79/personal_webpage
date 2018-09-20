@@ -3,19 +3,33 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Webpage</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <style>
+            .row > article {
+                padding: 20px;
+                border: 2px solid black;
+                border-radius: 50px;
+                margin: -10px;
+            }
             nav {
+                float: left;
+                border: 2px solid black;
+                border-radius: 50px;
+            }
+            body > article {
                 float: right;
             }
-
+            header, h2 {
+                text-align:center;
+            } 
 		</style>
     </head>
     <body>
         <header>
-            <h1> página personal de Guillermo Carbajosa </h1>
+            <h1> página personal de Guillermo Carbajosa Recuero </h1>
             <hr>
         </header>
         
@@ -24,128 +38,171 @@
             -style
             -displace those to external files 
         -->
-        
-        <nav>
-            <h2> contenidos: </h2>
-            <ul>
-                <li> <a href="#bio"> biografía      </a> </li>
-                <li> <a href="#skills"> habilidades </a> </li>
-                <li> <a href="#projects"> projectos </a> </li>
-                <li> <a href="#contact"> contacto   </a> </li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="row">
+                <nav class="col-md-3 col-sm-12">
+                    <h2> contenidos: </h2>
+                    <ul>
+                        <li> <a href="#bio"> biografía      </a> </li>
+                        <li> <a href="#skills"> habilidades </a> </li>
+                        <li> <a href="#projects"> projectos </a> </li>
+                        <li> <a href="#contact"> contacto   </a> </li>
+                    </ul>
+                </nav>
               
-        <article id="bio">
-            <h2> resumen de mi biografía </h2>
-            <section> 
-                <h3> lugares: </h3> 
-                <p>San Sebastián, crecí entre Alicante y Granada</p> 
-            </section>
-            <section> 
-                <h3> estudios: </h3> 
-                <p> Instituto, Universidad </p>
-            </section>
-            <section> 
-                <h3> trabajos: </h3> 
-                <p> Operario, Camarero, Profesor </p> 
-            </section>
-            <section> 
-                <h3> aficiones: </h3> 
-                <p> Música, cine y cervezas con los amigos </p> 
-            </section>
-        </article>
-        
+                <article id="bio" class="col-md-9 col-sm-12">
+                    <h2> resumen de mi biografía </h2>
+                    <section> 
+                        <h3> lugares: </h3> 
+                        <p>San Sebastián, crecí entre Alicante y Granada</p> 
+                    </section>
+                    <section> 
+                        <h3> estudios: </h3> 
+                        <p> Instituto, Universidad </p>
+                    </section>
+                    <section> 
+                        <h3> trabajos: </h3> 
+                        <p> Operario, Camarero, Profesor </p> 
+                    </section>
+                    <section> 
+                        <h3> aficiones: </h3> 
+                        <p> Música, cine y cervezas con los amigos </p> 
+                    </section>
+                </article>
+            </div>
+        </div>
         <hr>
         
-        <article id="skills">
-            <h2> habilidades de programación  </h2>
-            <section>
-                <h3> lenguajes modernos: </h3>
-                <ul> 
-                    <li> Python </li>
-                    <li> JavaScript </li>
-                    <li> HTML y CSS </li>
-                </ul>
-            </section>
-            <section>
-                <h3> lenguajes clásicos: </h3>
-                <ul>         
-                    <li> C++ </li>
-                    <li> FORTRAN </li>
-                </ul>
-            </section>
-            <section>
-                <h3> marcos de desarrollo web: </h3>
-                <ul> 
-                    <li> Flask </li>
-                    <li> Django </li>
-                </ul>
-            </section>
-            <section>
-                <h3> conocimientos relacionados </h3>
-                <ul> 
-                    <li> Métodos Numéricos </li>
-                    <li> Análisis de Algoritmos </li>
-                    <li> Física Computacional </li>
-                    <li> Nociones de Ensamblador </li>
-                    <li> Sistemas GNU/Linux </li>
-                </ul>
-            </section>
-        </article>
-        
+        <div class="container">
+            <div class="row">
+                <nav class="col-md-3 col-sm-12">
+                    <h2> contenidos: </h2>
+                    <ul>
+                        <li> <a href="#bio"> biografía      </a> </li>
+                        <li> <a href="#skills"> habilidades </a> </li>
+                        <li> <a href="#projects"> projectos </a> </li>
+                        <li> <a href="#contact"> contacto   </a> </li>
+                    </ul>
+                </nav>
+              
+                <article id="skills" class="col-md-9 col-sm-12">
+                    <h2> habilidades de programación  </h2>
+                    <section>
+                        <h3> lenguajes modernos: </h3>
+                        <ul> 
+                            <li> Python </li>
+                            <li> JavaScript </li>
+                            <li> HTML y CSS </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3> lenguajes clásicos: </h3>
+                        <ul>         
+                            <li> C++ </li>
+                            <li> FORTRAN </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3> marcos de desarrollo web: </h3>
+                        <ul> 
+                            <li> Flask </li>
+                            <li> Django </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3> conocimientos relacionados </h3>
+                        <ul> 
+                            <li> Métodos Numéricos </li>
+                            <li> Análisis de Algoritmos </li>
+                            <li> Física Computacional </li>
+                            <li> Nociones de Ensamblador </li>
+                            <li> Sistemas GNU/Linux </li>
+                        </ul>
+                    </section>
+                </article>
+            </div>
+        </div>    
+        <hr>
+
+        <div class="container">
+            <div class="row">
+                <nav class="col-md-3 col-sm-12">
+                    <h2> contenidos: </h2>
+                    <ul>
+                        <li> <a href="#bio"> biografía      </a> </li>
+                        <li> <a href="#skills"> habilidades </a> </li>
+                        <li> <a href="#projects"> projectos </a> </li>
+                        <li> <a href="#contact"> contacto   </a> </li>
+                    </ul>
+                </nav>
+                      
+                <article id="projects" class="col-md-9 col-sm-12">
+                    <h2> projectos web </h2>
+                    <p> Aquí encontrarás pequeños trabajos que voy realizando,
+                     para aprender y experimentar con el desarrollo de aplicaciones web </p>
+                    <section id="flask_projects">
+                        <h3> projectos con Flask </h3>
+                        <ul>
+                            <li> 
+                                <a href="#"> 
+                                    <article>     
+                                        <h3> Project 1 </h3>
+                                        <p> blah, blah, blah </p>
+                                    </article>
+                                </a> 
+                            </li>
+                            <li> 
+                                <a href="#"> 
+                                    <article>     
+                                        <h3> Project 2 </h3>
+                                        <p> blah, blah, blah </p>
+                                    </article>
+                                </a> 
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="django_projects">
+                        <h3> projectos con Django </h3>
+                        <ul>
+                            <li> 
+                                <a href="#"> 
+                                    <article>     
+                                        <h3> Project 3 </h3>
+                                        <p> blah, blah, blah </p>
+                                    </article>
+                                </a> 
+                            </li>
+                    </section>  
+                </article>
+            </div>
+        </div>
+
         <hr>
         
-        <article id="projects">
-            <h2> projectos web </h2>
-            <p> Aquí encontrarás pequeños trabajos que voy realizando,
-             para aprender y experimentar con el desarrollo de aplicaciones web </p>
-            <section id="flask_projects">
-                <h3> projectos con Flask </h3>
-                <ul>
-                    <li> 
-                        <a href="#"> 
-                            <article>     
-                                <h3> Project 1 </h3>
-                                <p> blah, blah, blah </p>
-                            </article>
-                        </a> 
-                    </li>
-                    <li> 
-                        <a href="#"> 
-                            <article>     
-                                <h3> Project 2 </h3>
-                                <p> blah, blah, blah </p>
-                            </article>
-                        </a> 
-                    </li>
-                </ul>
-            </section>
-            <section id="django_projects">
-                <h3> projectos con Django </h3>
-                <ul>
-                    <li> 
-                        <a href="#"> 
-                            <article>     
-                                <h3> Project 3 </h3>
-                                <p> blah, blah, blah </p>
-                            </article>
-                        </a> 
-                    </li>
-            </section>  
-        </article>
-        
-        <hr>
-        
-        <article id="contact">
-            <h2> como contactar conmigo </h2>
-            <p> Enlaces a mi perfil en distintas redes sociales, 
-            o bién un formulario de contacto, para dejarme un mensaje 
-            y que me ponga en contacto contigo</p>
-            <ul>
-                <li></li>
-            </ul>
-        </article>
-        
+        <div class="container">
+            <div class="row">
+                <nav class="col-md-3 col-sm-12">
+                    <h2> contenidos: </h2>
+                    <ul>
+                        <li> <a href="#bio"> biografía      </a> </li>
+                        <li> <a href="#skills"> habilidades </a> </li>
+                        <li> <a href="#projects"> projectos </a> </li>
+                        <li> <a href="#contact"> contacto   </a> </li>
+                    </ul>
+                </nav>
+              
+                <article id="contact" class="col-md-9 col-sm-12">
+                    <h2> como contactar conmigo </h2>
+                    <p> Enlaces a mi perfil en distintas redes sociales, 
+                    o bién un formulario de contacto, para dejarme un mensaje 
+                    y que me ponga en contacto contigo</p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+       
         <hr>
         
         <aside>
