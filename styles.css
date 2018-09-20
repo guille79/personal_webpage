@@ -1,21 +1,51 @@
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container > li {
+    list-style-type: none;
+    background-color: brown;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+
+/* TODO:
+    - migrate to SASS
+    - will I prefer bootstraps buttons or my own?
+    - find out colors
+    - find out font types
+*/
+
+
 body {
     background-color: orange; 
 }
+
 .row > article {
     padding: 20px;
     border: 2px dashed black;
     border-radius: 50px;
     margin: 30px;
 }
+
 nav {
     float: left;
     margin: 30px;
 }
+
 body > article {
        
 }
+
 header, h2 {
     text-align:center;
 } 
+
+#skills li {
+    list-style-type: square;
+}
 
