@@ -1,6 +1,8 @@
+$color0: beige;
+$color2: lightgreen;
 
 body {
-    background-color: beige; 
+    background-color: $color0; 
 }
 
 header, h2 {
@@ -27,14 +29,11 @@ header, h2 {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-}
-
-.flex-container > li {
+    
+    > li {
         list-style-type: none;
-        
-                
-        
-} 
+    }
+}
 
 button {
         background-color: lightgreen;
@@ -46,9 +45,9 @@ button {
 }
 
 /* TODO:
-    - migrate to SASS 
-    - will I prefer bootstraps buttons or my own? only for this time, my own.
-    - find out colors < OK
+    - migrate to SASS < OK
+    - will I prefer bootstraps buttons or my own?
+    - find out colors
     - find out font types
 */
 
