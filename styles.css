@@ -1,4 +1,5 @@
 
+
 body {
     background-color: beige; 
 }
@@ -19,6 +20,9 @@ header, h2 {
     margin: 30px;
 }
 
+#presentation, #contact {
+    border: 0;
+}
 
 #skills li {
     list-style-type: square;
@@ -31,9 +35,6 @@ header, h2 {
 
 .flex-container > li {
         list-style-type: none;
-        
-                
-        
 } 
 
 button {
@@ -45,9 +46,8 @@ button {
         width: 200px;
 }
 
+
 /* TODO:
-    - migrate to SASS 
-    - will I prefer bootstraps buttons or my own? only for this time, my own.
     - find out colors < OK
     - find out font types
 */

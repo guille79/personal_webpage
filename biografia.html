@@ -8,31 +8,19 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
-        <script src="gaussian_pachinko.js"></script>
         <style>
             @media (min-width: 500px) {
                 h1::before {
                     content: "página personal de ";
                 }
-            }           
-            canvas {
-              border: 2px solid black;
             }
         </style>
     </head>
-    <body onload="init();">
+    <body>
         <header>
             <h1> Guillermo Carbajosa Recuero </h1>
             <hr>
         </header>
-        
-        <!-- TODO:
-            -basic content structure < OK
-            -style < OK
-            -displace those to external files
-            -revise contents 
-            -mediaquery to short titles in small displays < OK
-        -->
         
         <div class="container">
             <div class="row">
@@ -46,12 +34,27 @@
                     </ul>
                 </nav>
               
-                <article id="presentation" class="col-md-8 col-sm-12">
-                    <h2> ¡Bienvenid@ a mi página web! </h2>
-                    <canvas id="myCanvas" width="750" height="450"></canvas>
+                <article id="bio" class="col-md-8 col-sm-12">
+                    <h2> resumen de mi biografía </h2>
+                    <section> 
+                        <h3> lugares: </h3> 
+                        <p>San Sebastián, crecí entre Alicante y Granada</p> 
+                    </section>
+                    <section> 
+                        <h3> estudios: </h3> 
+                        <p> Instituto, Universidad </p>
+                    </section>
+                    <section> 
+                        <h3> trabajos: </h3> 
+                        <p> Operario, Camarero, Profesor </p> 
+                    </section>
+                    <section> 
+                        <h3> aficiones: </h3> 
+                        <p> Música, cine y cervezas con los amigos </p> 
+                    </section>
                 </article>    
             </div>
         </div>
-   
+ 
     </body>
 </html>

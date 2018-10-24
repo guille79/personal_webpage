@@ -8,31 +8,19 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
-        <script src="gaussian_pachinko.js"></script>
         <style>
             @media (min-width: 500px) {
                 h1::before {
                     content: "página personal de ";
                 }
-            }           
-            canvas {
-              border: 2px solid black;
             }
         </style>
     </head>
-    <body onload="init();">
+    <body>
         <header>
             <h1> Guillermo Carbajosa Recuero </h1>
             <hr>
         </header>
-        
-        <!-- TODO:
-            -basic content structure < OK
-            -style < OK
-            -displace those to external files
-            -revise contents 
-            -mediaquery to short titles in small displays < OK
-        -->
         
         <div class="container">
             <div class="row">
@@ -46,12 +34,17 @@
                     </ul>
                 </nav>
               
-                <article id="presentation" class="col-md-8 col-sm-12">
-                    <h2> ¡Bienvenid@ a mi página web! </h2>
-                    <canvas id="myCanvas" width="750" height="450"></canvas>
-                </article>    
+                <article id="contact" class="col-md-8 col-sm-12">
+                    <h2> como contactar conmigo </h2>
+                    <p> Enlaces a mi perfil en distintas redes sociales, 
+                    o bién un formulario de contacto, para dejarme un mensaje 
+                    y que me ponga en contacto contigo</p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </article>
             </div>
         </div>
-   
+        
     </body>
 </html>

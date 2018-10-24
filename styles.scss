@@ -21,6 +21,9 @@ header, h2 {
     margin: 30px;
 }
 
+#presentation, #contact {
+    border: 0;
+}
 
 #skills li {
     list-style-type: square;
@@ -46,7 +49,6 @@ button {
 
 /* TODO:
     - migrate to SASS < OK
-    - will I prefer bootstraps buttons or my own?
     - find out colors
     - find out font types
 */
